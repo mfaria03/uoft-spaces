@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html id="html" class="no-js">
+<head lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+
+	const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			const id = entry.target.getAttribute('id');
+			if (entry.intersectionRatio > 0) {
+				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+			} else {
+				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+			}
+		});
+	});
+
+	// Track all sections that have an `id` applied
+	document.querySelectorAll('section[id]').forEach((section) => {
+		observer.observe(section);
+	});
+	
+});
+</script>
+    
+<title>Theme Documentation </title>
+</head>
+
+<body>
+    
+<div class="col-1 doc-container">
+<section id="introduction">
+    <h1>U of T Theme | Spaces & Experiences</h1>
+    <ul class="item-details">
+    <li>
+        <strong>Item Name : </strong>WordPress Theme | U of T - Spaces &amp; Experiences
+    </li>
+        <li><strong>Theme Supports : </strong> WordPress 6.3</li>
+   <li>
+        <strong>Theme Developers : </strong><a href="https://www.dayshiftdigital.com/">Day Shift Digital</a>
+    </li>
+    <li>
+        <strong>Author / Support Developer : </strong>
+        <a href="mailto:faria.melanie@gmail.com">Melanie Faria</a>
+    </li>
+</ul>
+    
+<p>This document covers the installation, setup and use of this theme. </p>
+
+<h2>Requirements</h2>
+<p>You will need the following to use the theme:</p>
+<ol>
+    <li>A fresh installation of <a href="https://wordpress.org/download/">WordPress</a>.</li>
+    <li>You have a username and password with an <a href="https://www.wpbeginner.com/beginners-guide/wordpress-user-roles-and-permissions/">Administrator</a> user role or FTP access.</li>
+</ol>
+</section>
+<!--/introduction-->
+
+<section id="GettingStarted">
+<h1>
+    <a href="#GettingStarted">Getting Started</a><small>
+    <a href="#html">Back to Top</a></small>
+</h1>
+    
+    
+<p>Locate your theme folder where you will find <span class="highlight">uoft.zip</span> and <span class="highlight">u-of-t-ancillary-child-theme.zip </span></p>
+
+<h2>WordPress Theme and Child Theme Upload</h2>
+<ol>
+    <li>Login to your WordPress <strong>Admin</strong> <i>(Ex: https://www.yourwebsite.com/wp-admin)</i>.
+    </li>
+    <li>Navigate to the <strong>Dashboard</strong> where you will find <strong>Appearance > Themes</strong> <strong>> Add New</strong></li>
+    <li>
+        <strong>Upload Theme </strong> > <strong>Choose File </strong>.
+    </li>
+    <li>
+        Choose <strong>uoft.zip</strong> and press the <strong>Install Now</strong> button.     
+        <img src="https://i.ibb.co/x7kYqG3/01a.jpg">
+    </li>
+    <li>On the next screen, Click <strong>Go to Themes page</strong>
+        <img src="https://i.ibb.co/NLJfnyz/01b.jpg">
+    </li>
+</ol>
+    
+<h2>WordPress Child Theme Upload</h2>    
+<ol>
+    <li>
+        <strong>Upload Theme </strong>><strong>Choose File.</strong>
+    </li>
+    <li>
+        Choose <strong>u-of-t-ancillary-child-theme.zip</strong> and press the <strong>Install Now</strong> button.     
+    </li>
+    <li>In the next screen, Click <strong>Activate.</strong>
+        <img src="https://i.ibb.co/3SwgPdy/01c.jpg">
+    </li>
+    <li>Your Themes are now installed.</strong>
+    </li>
+</ol>
+    
+<blockquote>
+    If there happens to be any errors when you activate your Child Theme, notify your IT department or developers for troubleshooting.  It's always best to send a screenshot and a quick explaination of what the error states.
+</blockquote>
+
+<h2>FTP Upload</h2>
+<p> 
+    To manually upload your new WordPress theme, login with your credentials to your website and locate the wp-content folder in your WordPress install files. Upload the <b>un-zipped</b> 'uoft' folder and the 'u-of-t-ancillary-child-theme' folder into the: wp-content/themes folder.
+</p>
+
+<p>
+    Once uploaded, activate the theme by heading to the "Themes" menu in the WordPress <strong>Dashboard.</strong> Locate the <strong>U of T Child</strong> theme and Click <strong>Activate.</strong>
+</p>
+</section>    
+<!--/GettingStarted-->   
+
+<section id="RecommendedPlugins">
+<h1>
+    <a href="#RecommendedPlugins">Install Recommended Plugins</a><small>
+    <a href="#html">Back to Top</a></small>
+</h1> 
+<p></p>
+<ol>
+    <li>
+        When you first activate the theme, you will be notified of what
+        plugins are recommended to use.  Click <strong>Begin installing plugins.</strong>
+        <img src="https://i.ibb.co/FbfFycn/2a.jpg" /> 
+    </li>
+    <li>
+        In the next screen, you are going to "Bulk Install" all the required plugins. Click the <strong>Dropdown</strong> > Select <strong>Install</strong> > Click the <strong>Checkbox</strong> next to "Plugin" > Click <strong>Apply</strong>
+        <img src="https://i.ibb.co/HPnqByB/2b.jpg" /> 
+    </li>    
+    
+<blockquote>Installation may take a few minutes, please be patient and do not refresh the page. </blockquote>  
+    <li>After installation, scroll to the bottom of the page and click <strong>Return to Required Plugins Installer.</strong>
+    <img src="https://i.ibb.co/yyJRZKB/2c.jpg" /> 
+    </li>
+    
+    <li>
+        In the next screen, you are going to "Bulk Activate" all the required plugins. Click the <strong>Dropdown</strong> > Select <strong>Install</strong> > Click the <strong>Checkbox</strong> next to "Plugin" > Click <strong>Apply</strong>
+        <img src="https://i.ibb.co/xsBw031/2d.jpg" /> 
+    </li>        
+    <li>Click <strong>Return to the Dashboard</strong></li>
+</ol>
+</section>
+<!--/RecommendedPlugins-->
+
+<section id="configurations">
+<h1>
+    <a href="#configurations">Configurations</a>
+    <small><a href="#html">Back to Top</a></small>
+</h1>
+<p>Do the following configurations in order:</p>
+ <ol>
+    <li>Post Types Order</li>
+    <li>Permalink Structure</li>
+    <li>Media Upload Folder</li>
+</ol>    
+    
+<h2>Post Types Order</h2>   
+<ol>
+    <li><strong>Dashboard</strong> > <strong>Settings</strong> > <strong>Post Type Order</strong>  
+    <li>From the Dashboard landing page, Click  <strong>Settings Page</strong><img src="https://i.ibb.co/TW3szcL/Post-Types-Order.jpg"></li>
+</ol>   
+    
+<h3>General:</h3>
+<ul class="bullets">
+    <li class="nocircle">Show / Hide re-order interface</li>
+    <li>Post > <strong>Show</strong></li>
+    <li>Media > <strong>Show</strong></li>
+    <li>Pattern > <strong>Show</strong></li>
+    <li>Navigation Menu > <strong>Hide</strong></li>
+    <li>News > <strong>Hide</strong></li> 
+</ul>
+
+<h3>Minimum Level to use this plugin:</h3>
+<ul class="bullets">
+    <li>Minimum Level to use this plugin > <strong>Administrator</strong></li>
+
+</ul>
+
+<h3>Auto Sort:</h3>
+<ul class="bullets">
+    <li>Auto Sort > <strong>Uncheck</strong></li>
+</ul>
+
+<h3>Admin Sort:</h3>
+<ul class="bullets">
+    <li>Admin Sort > <strong>Uncheck</strong></li>
+</ul>
+
+<h3>Use query ASC / DESC parameter:</h3>
+<ul class="bullets">
+    <li>Use query ASC / DESC parameter > <strong>Uncheck</strong></li>
+</ul>
+
+<h3>Archive Drag &amp Drop :</h3>
+<ul class="bullets">
+    <li>Post > <strong>Yes </strong></li>
+    <li>Page > <strong>Yes </strong></li>
+    <li>Media > <strong>Yes </strong></li>
+    <li>Pattern > <strong>Yes </strong></li>
+    <li>Navigation Menu > <strong>No </strong></li>
+    <li>Taxonomies > <strong>No </strong></li>
+    <li>Post Type > <strong>No </strong></li>
+    <li>Field Group > <strong>No</strong> </li>
+    <li>News > <strong>No </strong></li>
+</ul>
+
+
+<h3>Next / Previous Apply Uncheck </h3> 
+<ul class="bullets">
+    <li>Click Save Settings > <strong>Uncheck </strong></li>
+</ul>
+  
+
+<ol start="3">
+    <li>Click <strong>Save Settings</strong></li>
+</ol>
+<!--/configurations-->
+    
+    
+<h2>Permalink Structure</h2>   
+<ol>
+    <li><strong>Dashboard</strong> > <strong>Settings</strong> > <strong>Permalinks</strong> </li>
+    
+    <li>Click <strong> Custom Structure</strong> > Uncheck the tags currently in place: <pre>%year%</pre>  <pre>%monthnum%</pre> <pre>%day% </pre> <pre>%postname%</pre>
+        <img src="images/perma-structure-1.jpg">
+    </li>
+    <li>Check the tags:</strong> <pre>/%category%/%postname%/</pre>  
+    <img src="images/perma-structure-2.jpg">
+    </li>
+    <li>Scroll to the bottom of the page and <strong>Save Changes</strong></li>
+</ol>  
+
+<h2>Media Upload Folder</h2>   
+<ol>
+    <li><strong>Dashboard</strong> > <strong>Settings</strong> > <strong>Media</strong>  </li> 
+    <ul class="bullets">
+        <li class="nocircle"> Uploading Files:  </li>
+        <li><strong>Uncheck</strong> > Organize my uploads into month- and year-based folders</li>
+    </ul>    
+    <li>Scroll to the bottom of the page and <strong>Save Changes</strong> </li>   
+</ol>  
+</section>
+<!--/configurations-->  
+    
+<section id="DemoContent">
+<h1>
+<a href="#DemoContent">Import Demo Content</a
+><small><a href="#html">Back to Top</a></small>
+</h1>
+
+<p>Work off of U of T demo content located in your Theme Folder. The XML file is included within the download package with the file name <span class="highlight">uoft-demo-data.xml</span></p>   
+
+
+<ol>
+<li><strong>Dashboard</strong> > <strong>Tools</strong> > <strong>Import</strong> </li> 
+<li>WordPress > <strong>Run Importer</strong>  
+    <img src="images/run-importer-1.jpg">
+</li>
+<li><strong>Choose File</strong> > <span class="highlight">uoft-demo-data.xml</span> > <strong>Upload file and import</strong>
+    <img src="images/run-importer-2.jpg">
+</li>
+<li>In the next screen,  <br> <strong class="mt-10">Assign Authors</strong> > Choose <strong>"or assign posts to an existing user"</strong> and choose the user.  </li>
+    
+    <li><strong>Import Attachments</strong> >  Check <strong>Download and import file attachments</strong> and Click <strong>Submit</strong>.  
+    <img src="images/run-importer-3.jpg">
+
+<blockquote>
+    <p>The <strong>import</strong> will take a few minutes (5 - 10 minutes). </p>
+    <p>Please be patient and do not refresh the page. </p>
+
+    <p>To verify the import is working, take a look at the favicon in your browser tab to see if it is spinning as an indication it is downloading.</p>
+
+    <div class="sbs-container">
+     <img src="images/run-import-4.gif"> <- Success! It's importing!
+    </div>
+
+    </blockquote>
+</li>
+</ol>
+</section>
+<!--/DemoContent-->
+
+<section id="Navigation">
+<h1>
+    <a href="#Navigation">Homepage and Navigations</a>
+    <small><a href="#html">Back to Top</a></small>
+</h1>
+
+<h2>Set Homepage</h2>
+<ol> 
+    <li><strong>Dashboard</strong> > <strong>Settings</strong> > <strong>Reading</strong> </li>
+    <li>Your homepage displays > Select <strong>"A <u>static page</u>" </strong> > From the <strong>Homepage</strong>: drop down, Select <strong> Home</strong></li>
+    <li>Scroll to the bottom and <strong>Save Changes.</strong></li>
+</ol>
+<img src="images/set-homepage.jpg" />
+<!--/homepage-->
+
+<h2>Set Homepage Navigation and Footer Navigation</h2>
+<ol> 
+    <li><strong>Dashboard</strong> > <strong>Appearance</strong> > <strong>Menus</strong> </li>
+</ol>   
+
+<p>Click the <strong>Manage Locations</strong> tab and match the <u>Theme Location</u> to the <u>Assigned Menu</u> from the drop downs. </p>
+<img src="images/set-navigation.jpg" />
+<h3>Manage Locations:</h3>
+
+    <ul class="bullets">  
+        <li>Primary > primary</li>
+        <li>Footer Column 1 > Footer Column 1</li>
+        <li>Footer Column 2 > Footer Col 2</li>
+        <li>Footer Column 3 > Footer Column 3</li>
+    </ul>
+ 
+<ol start="3">
+    <li ><strong>Save Changes</strong></li>
+</ol>
+</section>
+<!--/Navigation-->
+
+
+<section id="ThemeOptions">
+    <h1>
+        <a href="#ThemeOptions">Theme Options</a>
+        <small><a href="#html">Back to Top</a></small>
+    </h1>
+   <p>With <strong>Theme Options</strong> you can add:</p>
+    <ul class="themeoptions">
+        <li> -> <a href="#ThemeOptionsHeaderLogo">Homepage logo</a></li>
+        <li> -> <a href="#ThemeOptionsFooterLogo">Footer logo</a></li>
+        <li> -> <a href="#ThemeOptionsHeaderAlert">Homepage Header Alert Bar</a></li>
+        <li> -> <a href="#ThemeOptionsHeaderButton">Homepage Header Button</a></li>
+        <li> -> <a href="#ThemeOptionsFooterSocialIcons">Footer Social Media Icons</a></li>
+    </ul>
+
+    <h2 id="ThemeOptionsHeaderLogo">Homepage Logo</h2>
+    <ol>
+        <li><strong>Dashboard</strong> > Theme Options > <strong>Header</strong> > Header Logo > <strong>Add Image</strong></li>
+        <img src="images/ThemeOptionsHeaderLogo.jpg">
+        <li><strong>Publish</strong> > Update</li>
+        <img src="images/ThemeOptionsPublishUpdate.jpg">
+    </ol>
+
+    <h2 id="ThemeOptionsFooterLogo">Footer Logo</h2>
+    <ol>
+        <li><strong>Dashboard</strong> > Theme Options > <strong>Footer</strong> > Footer Logo ><strong> Add Image</strong></li>
+        <img src="images/ThemeOptionsFooterLogo.jpg">
+        <li><strong>Publish</strong> > Update</li>
+        <img src="images/ThemeOptionsPublishUpdate.jpg">
+    </ol>
+
+    <h2 id="ThemeOptionsHeaderAlert">Homepage Header Alert Bar</h2>
+    <img src="images/ThemeOptionsHeaderAlert.jpg">
+    <ol>
+        <li><strong>Dashboard</strong> > Theme Options > <strong>Header</strong> > Show Alert Bar ><strong>Show</strong></li>  
+        <li>Alert Bar ><strong>Add Image</strong></li>
+
+        <li><strong>Media Library</strong> > Search "alert" > Choose your alert icon > Click <strong>Select</strong></li>
+        <img src="images/ThemeOptionsHeaderAlertImage.jpg">
+        <li><strong>Alert Content > </strong>Add content</li>
+        <li>
+            <strong>Alert Color</strong> > Select a Colour > <strong>Enter a HEX Colour </strong> [ <a href="https://brand.utoronto.ca/guidelines/#colour" target="_blank">Brand Colours</a> ] > Publish > Update  <br> <br>  
+        
+            <span class="highlight"> <strong>NOTE</strong>:</span> Use the <a href="https://brand.utoronto.ca/guidelines/#colour" target="_blank">Brand Colours</a> HEX Colors. &nbsp;&nbsp; Example: <strong>U of T Blue</strong> <pre>#1E3765</pre>
+            <img src="images/ThemeOptionsAlertColour.jpg">
+        </li>
+
+       Check to see if <a href="https://brand.utoronto.ca/guidelines/#colour" target="_blank">Secondary Colours</a> pass <strong>Web Accessiblity <u>Normal Text WCAG AA</u></strong>: <a href="https://webaim.org/resources/contrastchecker/">https://webaim.org/resources/contrastchecker/</a>
+    </ol>
+
+    <h2 id="ThemeOptionsHeaderButton">Homepage Header Button</h2>
+    <ol>
+        <li>
+            <img src="images/ThemeOptionsHeaderButton-1.jpg">
+            <strong>Dashboard</strong> > Theme Options > <strong>Header</strong> > Header Button > <strong>Select Link</strong>
+            <img src="images/ThemeOptionsHeaderButton-2.jpg">
+        </li>
+
+        <li><strong>Publish</strong> > Update</li>
+    </ol>
+
+    <h2 id="ThemeOptionsFooterSocialIcons">Footer Social Media Icons</h2>
+    <ol>
+        <li>
+            <strong>Dashboard</strong> > Theme Options > <strong>Company Information</strong> > Social Media </li>
+        <li>Paste in Social URLs</li>
+        <li><strong>Publish</strong> > Update</li>
+    </ol>
+
+    <blockquote>
+        <strong>TURN OFF Auxiliary Department Required</strong> <br> 
+        <p>Turn off the Requirement to have ALL four social URLs</p>
+        Dashboard > ACF > Theme Options > Edit > Auxiliary Department > Edit > Validation > Required (off)
+    </blockquote>
+
+</section>
+<!--/ThemeOptions-->
+
+
+
+
+
+
+
+
+</div>
+<!--/col-1 doc-container-->
+
+
+<div class="col-2">
+    <nav class="section-nav">
+    <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#GettingStarted">Getting Started</a></li>
+        <li><a href="#RecommendedPlugins">Install Plugins</a></li>
+        <li><a href="#configurations">Configurations</a></li>
+        <li><a href="#DemoContent">Import Demo Content</a></li>
+        <li><a href="#Navigation">Homepage and Navigations</a></li>
+        <li><a href="#ThemeOptions">Theme Options</a></li>
+        <li><a href="https://brand.utoronto.ca/guidelines/#colour" target="_blank">Brand Colours</a></li>
+
+        
+   
+    </ol>
+</nav>
+</div>
+<!--/col-2-->
+
+</body>
+</html>
